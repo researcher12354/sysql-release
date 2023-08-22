@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mvn install && mvn compile
+mvn -q exec:java -Dexec.mainClass=main.SysdigMain
+mvn -q exec:java -Dexec.mainClass=main.ExecutorMain

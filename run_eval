@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+mvn install && mvn compile
+for d in eval/queries/*; do
+    if [ ! -f "$d/output.txt" ]; then
+        mvn -q exec:java -Dexec.mainClass=main.ExecutorMain -Dexec.args="$d/input.txt" > "$d/output.txt"
+    fi
+done

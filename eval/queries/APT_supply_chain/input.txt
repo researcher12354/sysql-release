@@ -1,0 +1,21 @@
+search from db(case2_supply_chain) where
+e1{cmdline like 'freemem.sh', type=process},
+e2{type=process},
+e3{type=process}
+with e1->e2 &&[<100s]
+e2->e3
+return * as poi1;
+
+
+a = back track poi1 from db(case2_supply_chain);
+
+search from db(case2_supply_chain) where
+e1{cmdline like 'wget', type=process},
+e2{type=process}
+with e1->e2
+return * as poi2;
+
+
+b = forward track poi2 from db(case2_supply_chain);
+
+export (a | b) as "./APT_supply_chain";
