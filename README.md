@@ -1,6 +1,6 @@
 # SysQL
 
-SysQL is a system that enables efficient attack investigation via syntergistically integrating attack pattern search and causal dependency tracking. The system leverages existing system auditing frameworks (Sysdig, ProcMon) to collect system audit logs, and parses the logs into PostgreSQL and Neo4j databases. To faciliitate the iterative invesitgation process, the system provides a domain-specific language, Threat Search and Tracking Language (TSTL), enabling security analysts to incorporate expert knowledge in the attack investigation process.
+SysQL is a system that enables efficient attack investigation via syntergistically integrating attack pattern search and causal dependency tracking. The system leverages existing system auditing frameworks (Sysdig, ProcMon) to collect system audit logs, and parses the logs into PostgreSQL and Neo4j databases. To faciliitate the iterative invesitgation process, the system provides a domain-specific language, System Provenance Query Language (SysQL), enabling security analysts to incorporate expert knowledge in the attack investigation process.
 
 For more information, please refer to our paper.
 
