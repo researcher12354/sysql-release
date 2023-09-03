@@ -41,7 +41,7 @@ Multiple queries can be written in the file or `inputStream` to be executed sequ
 
 Use `-n` flag to use Neo4j database. Otherwise, the default PostgreSQL database will be used.
 
-Use `-r` flag in arguments to compile to standalone recursive SQL queries (or Cypher queries) instead of using the TSTL query scheduler.
+Use `-r` flag in arguments to compile to standalone recursive SQL queries (or Cypher queries) instead of using the SysQL query scheduler.
 
 > You can try the sample query by running `./run_sample`.
 
